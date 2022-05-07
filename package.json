@@ -1,0 +1,13 @@
+{
+  "name": "slang-coding-challenge",
+  "version": "1.0.0",
+  "description": "A coding challenge for the Software Engineer role at Slang",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Elizabeth Lizcano Rojas",
+  "license": "ISC"
+}
