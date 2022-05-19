@@ -10,22 +10,6 @@ function getActivities() {
   return fetchData(GET_ACTIVITIES_URL, { headers: HEADERS })
 }
 
-/**
- * Function that sort an array of activities in ascendent order.
- * @param {Array} userActivities
- * @returns Sorted array of activity objects.
- */
-function sortActivities(activities) {
-  if (!Array.isArray(activities)) {
-    throw new Error("Function: sortActivities. The input must be an array.");
-  }
-
-  return activities.sort((a, b) => {
-    const firstDate = new Date(a.first_seen_at);
-    const secondDate = new Date(b.first_seen_at);
-    return firstDate - secondDate;
-  });
-}
 
 /**
  * Function that classify arrays of activities by users id's.
@@ -61,8 +45,6 @@ function classifyActivitiesByUser(activities) {
 }
 
 module.exports = {
-  getActivities, 
-  sortActivities,
+  getActivities,
   classifyActivitiesByUser
 }
-
