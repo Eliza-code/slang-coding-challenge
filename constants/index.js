@@ -9,7 +9,7 @@ const GET_ACTIVITIES_URL = `${API_BASE_URL}/activities`;
 const POST_SESSIONS_URL = `${API_BASE_URL}/activities/sessions`;
 
 const HEADERS = {
-    Authorization: `Basic ${AUTH_TOKEN}`,
+  Authorization: `Basic ${AUTH_TOKEN}`,
   "Content-Type": "application/json",
 };
 
